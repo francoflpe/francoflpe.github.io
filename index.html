@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="LogoAlura.png" alt="Logo da Alura">
+    </header>
+    <main class="estrutura">
+        <div class="estrutura__botao__input">
+            <div>
+                <textarea id="input_cripto" class="estrutura__input" rows="17" cols="35" placeholder="Digite seu texto aqui..."></textarea>
+            </div>
+            <div class="estrutura__botao__condicao">
+                <img class="estrutura__botao__condicao__imagem" src="exclamação.png" alt="Ponto de Exclamação">
+                <p class="estrutura__botao__condicao__texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="estrutura__botao">
+                <button onclick="Criptografar()" class="estrutura__botao__cripto">Criptografar</button>
+                <button onclick="Descriptografar()" class="estrutura__botao__descripto">Descriptografar</button>
+            </div>
+        </div>
+        <div class="estrutura__resultado">
+            <div class="estrutura__resultado__imagem" id="resultado__imagem">
+                <img src="figura1.png" alt="Mulher olhando um diamante">
+            </div>
+            <div class="estrutura__resultado__texto" id="resultado__texto">
+                <h1 class="estrutura__resultado__texto__titulo">Nenhuma mensagem encontrada</h1>
+                <p class="estrutura__resultado__texto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div>
+                <textarea class="estrutura__resultado__descripto__texto" rows="25" cols="22" style="display: none;" id="resultado__descripto__texto"></textarea>
+            </div>
+            <div>
+                <button onclick="Copiar()" class="estrutura__resultado__botao__copiar" style="display: none;" id="estrutura__botao__copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Felipe Franco.</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

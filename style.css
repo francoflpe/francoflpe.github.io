@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: white;
+    --cor-quaternaria: #343A40;
+    --cor-quinta: #495057;
+
+    --fonte-botao: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--cor-primaria);
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 2%;
+}
+
+.estrutura {
+    display: flex;
+    gap: 80px;
+}
+
+.estrutura__botao__input {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.estrutura__input {
+    background: var(--cor-primaria);
+    border: none;
+    font-family: var(--fonte-botao);
+    font-size: 32px;
+    color: var(--cor-secundaria);
+    margin: 80px 0px 0px 240px;
+}
+
+.estrutura__botao__condicao {
+    padding-left: 240px;
+    flex-direction: row;
+}
+
+.estrutura__botao__condicao__texto {
+    font-family: var(--fonte-botao);
+    color: var(--cor-quinta);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.estrutura__botao {
+    display: flex;
+    gap: 24px;
+    padding-left: 240px;
+    padding-bottom: 72px;
+}
+
+.estrutura__botao__cripto {
+    border-radius: 24px;
+    background: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-botao);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px;
+    width: 328px;
+    border: solid;
+    border-color: var(--cor-secundaria);
+    border-width: thin;
+}
+
+.estrutura__botao__descripto {
+    border-radius: 24px;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-botao);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px;
+    width: 328px;
+    border: solid;
+    border-color: var(--cor-secundaria);
+    border-width: thin;
+}
+
+.estrutura__resultado {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: var(--cor-terciaria);
+    padding: 40px;
+    height: 864px;
+    width: 320px;
+    border-radius: 32px;
+}
+
+.estrutura__resultado__imagem {
+    padding: 203px 0px 0px 0px;
+}
+
+
+.estrutura__resultado__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.estrutura__resultado__texto__titulo {
+    font-family: var(--fonte-botao);
+    font-size: 24px;
+    color: var(--cor-quaternaria);
+    font-weight: 700;
+    text-align: center;
+}
+
+.estrutura__resultado__texto__paragrafo {
+    font-family: var(--fonte-botao);
+    font-size: 16px;
+    color: var(--cor-quinta);
+    font-weight: 400;
+    text-align: center;
+}
+
+.estrutura__resultado__botao__copiar {
+    border-radius: 24px;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-botao);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6%;
+    padding: 24px;
+    width: 328px;
+    border: solid;
+    border-color: var(--cor-secundaria);
+    border-width: thin;
+    justify-content: center;
+}
+
+.estrutura__resultado__descripto__texto {
+    background: var(--cor-terciaria);
+    border: none;
+    font-family: var(--fonte-botao);
+    font-size: 24px;
+    color: var(--cor-quinta);
+}
+
+.rodape{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding-left: 240px;
+    text-align: left;
+    font-family: var(--fonte-botao);
+    font-size: 1.5rem;
+}
